@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #007bff;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Page Containers */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+button {
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Lists */
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list-item {
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-item button {
+    background-color: red;
+}
+
+.list-item button:hover {
+    background-color: darkred;
+}
+
+/* Client Grid */
+.client-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Client Card */
+.client-card {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.client-card h3 {
+    margin: 0 0 5px;
+}
+
+.client-card p {
+    margin: 0 0 10px;
+    color: gray;
+}
+
+.client-card button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.client-card button:last-child {
+    background-color: red;
+}
+
+.client-card button:last-child:hover {
+    background-color: darkred;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+button:disabled {
+    background-color: #cccccc !important;
+    color: #666666 !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+    opacity: 0.6 !important;
+}
+
+select {
+    padding: 10px;
+    /* Increase padding for height */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
